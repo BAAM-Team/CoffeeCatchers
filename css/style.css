@@ -1,0 +1,101 @@
+
+body {
+    background-image: url(/imges/background/coffee-beans-background-.jpg) ;
+    
+}
+img {
+    width: 60px;
+    border-radius: 10px;
+}
+li {
+    display: inline;
+    
+}
+ul {
+    position: absolute;
+  left: 67%;
+  bottom: 0%;
+}
+#circlPhone {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.contactIcon {
+    margin-left: 20px;
+}
+#InputStyle {
+    position: absolute;
+  left: 50%;
+  right: 50%;
+  Top: 65%;
+}
+a{
+    font-family: 'Ranchers', cursive;
+    display: justify;   
+    
+    
+}
+#catchIt {
+    font-size: 50px;
+    color: rgb(138, 35, 17);
+    position: absolute;
+  top: 55px;
+  right: -70px;
+  z-index: 2;
+  width: 500px;
+  word-spacing: 10pt;
+  text-align: right;
+  margin-right: 50px;
+
+    
+}
+input {
+    box-shadow: 5px 10px 18px burlywood;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(222, 184, 135, 0.897);
+    border: 1px solid brown;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+  left: 40%;
+  right: 60%;
+  Top: 60%;
+}
+#locationPin {
+    width: 200px;
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  border: 5px solid black;
+  clip-path: circle(41%);
+    
+  
+}
+#logoImg {
+    border-radius: 50%;
+    position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 150px;
+
+}
+#top-nav {
+    font-size: 40px;
+    color: burlywood;
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    opacity: 90%;
+    width: 200px;
+    
+}
+
+::placeholder {
+    font-weight: 800;
+    color: rgb(146, 18, 18);
+    font-size: 20px;
+    text-align: center;
+}
