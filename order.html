@@ -6,28 +6,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeCatchers - Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylepage4.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="menu.html">Locations</a>
-            <img src="" alt="logo">
+            <a id="top-nav" href="suggLocations.html"> <img id="left-arrow" src="imges/icons/left.png" alt="backtohome">
+                <span>
+                    Home
+                </span>
+            </a>
+            <img id="logoImg" src="imges/log/download.ico" alt="logo">
         </nav>
     </header>
     <main>
-        <aside>
+        <aside id="orderCart">
             <h1>Your Cart</h1>
             <div id="selectedProductCart"></div>
             <p id="Total"></p>
         </aside>
         <section>
-            <form action="">
+            <form id="orderForm">
                 <input type="text" placeholder="Your Name">
                 <input type="text" placeholder="Your Name">
                 <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit" id="purchase" >
-                <span id="timeToReady">q</span>
+                <input type="submit" value="Submit" id="purchase">
+                <span id="timeToReady">5:00</span>
             </form>
         </section>
     </main>
