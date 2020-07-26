@@ -1,0 +1,33 @@
+body {
+    /* background-image: url(imges/icons/teamname.png) ; */
+    
+}
+
+
+
+a{
+    font-family: 'Ranchers', cursive;
+    display: justify;   
+    
+    
+}
+
+#logoImg {
+    border-radius: 50%;
+    position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 150px;
+
+}
+#top-nav {
+    font-size: 40px;
+    color: burlywood;
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    opacity: 90%;
+    width: 200px;
+    
+}
+
