@@ -41,7 +41,85 @@ var brandProducts = [
                 "productPrice": 1.5
             }
         ]
+    },
+    {
+        "HotDrinks": [
+            {
+                "productImage": "imges/costaCoffee/hotDrink/caramelCortado.jpg ",
+                "productName": "caramelCortado",
+                "productPrice": 6
+            },
+            {
+                "productImage": "imges/costaCoffee/hotDrink/flatWhite.jpg",
+                "productName": "flatWhite",
+                "productPrice": 4
+            },{
+                "productImage": "imges/costaCoffee/hotDrink/honeycombCappuccino.jpg",
+                "productName": "honeycombCappuccino",
+                "productPrice": 3.5
+            },{
+                "productImage": "imges/costaCoffee/hotDrink/honeyComblattemacchiato.jpg",
+                "productName": "honeyComblattemacchiato",
+                "productPrice": 5
+            },{
+                "productImage": "imges/costaCoffee/hotDrink/latte.jpg",
+                "productName": "latte",
+                "productPrice":5
+            },{
+                "productImage": "imges/costaCoffee/hotDrink/mocha.jpg",
+                "productName": "mocha",
+                "productPrice": 6
+            }
+        ],
+        "ColdDrinks": [
+            {
+                "productImage": "imges/costaCoffee/coldDrink/classicLemonade.jpg",
+                "productName": "classicLemonade",
+                "productPrice": 5
+            },
+            {
+                "productImage": "imges/costaCoffee/coldDrink/honeyCombicedcappuccino.jpg",
+                "productName": "honeyCombicedcappuccino",
+                "productPrice": 3.5
+            },{
+                "productImage": "imges/costaCoffee/coldDrink/honeycombIcedlatte.jpg",
+                "productName": "honeycombIcedlatte",
+                "productPrice": 4.5
+            },{
+                "productImage": "imges/costaCoffee/coldDrink/mangoAndpassionfruitcooler.jpg",
+                "productName": "mangoAndpassionfruitcooler",
+                "productPrice": 4.5
+            },{
+                "productImage": "imges/costaCoffee/coldDrink/strawberrColdbrewcoffee.jpg",
+                "productName": "strawberrColdbrewcoffee",
+                "productPrice":4
+            }
+        ],
+        "Cookies": [
+            {
+                "productImage": "imges/costaCoffee/cookies/chocolateCaramelhazelnutcookie.jpg",
+                "productName": "/chocolateCaramelhazelnutcookie",
+                "productPrice": 1.5
+            },{
+                "productImage": "imges/costaCoffee/cookies/fruitOat.jpg",
+                "productName": "fruitOat",
+                "productPrice": 3
+            },{
+                "productImage": "imges/costaCoffee/cookies/jammyShort.jpg",
+                "productName": "jammyShort",
+                "productPrice": 5
+            },{
+                "productImage": "imges/costaCoffee/cookies/sheepMallow.jpg",
+                "productName": "sheepMallow",
+                "productPrice": 6
+            },{
+                "productImage": "imges/costaCoffee/cookies/walkingGinger.jpg",
+                "productName": "walkingGinger",
+                "productPrice": 4
+            }
+        ]
     }
+
 ]
 
 // This list for all branches (not the new add branches) include the name,location, mainPicture, Products.
@@ -57,6 +135,26 @@ var allBranches = [
         [31.9419497, 35.8877175],
         "image/2017-04-04.jpg",
         brandProducts[0]
+    ],[
+        "Starbucks Abdoun",
+        [31.9019397, 35.8077170],
+        "image/2017-04-04.jpg",
+        brandProducts[0]
+    ],[
+        "costaCoffe6CircleZahranSt",
+        [31.914049, 35.8381798],
+        "imges/costaCoffee/locationes/location1.jpg",
+        brandProducts[1]
+    ],[
+        "costaCoffePrinceRashed",
+        [31.9176626, 35.8323262],
+        "imges/costaCoffee/locationes/location2bolvared.jpg",
+        brandProducts[1]
+    ],[
+        "costaCoffeJamAlAlJuqahSt38",
+        [31.9633799, 35.9012039],
+        "imges/costaCoffee/locationes/location3swafi.jpg",
+        brandProducts[1]
     ]
 ]
 
