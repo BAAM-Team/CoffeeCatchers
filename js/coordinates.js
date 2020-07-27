@@ -49,13 +49,13 @@ var allBranches = [
     [
         "StarBucks Queen Rania St, Amman",
         [31.9852183, 35.9079837],
-        "image/2017-04-04.jpg",
+        "imges/mainImage/shutterstock_1075910024.0.jpg",
         brandProducts[0]
     ],
     [
         "Starbucks Abdoun",
         [31.9419497, 35.8877175],
-        "image/2017-04-04.jpg",
+        "imges/mainImage/shutterstock_1075910024.0.jpg",
         brandProducts[0]
     ]
 ]
