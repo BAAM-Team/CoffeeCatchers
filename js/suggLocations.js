@@ -78,9 +78,10 @@ function renderSecondRow() {
             numberOfImages++
             break;
         }
-    } if (numberOfImages < branchWithinRangeList.length) {
-        button.remove();
     }
+    // } if (numberOfImages < branchWithinRangeList.length) {
+    //     button.remove();
+    // }
 
 }
 
