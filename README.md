@@ -11,8 +11,8 @@ when the customer visits CoffeeCatchers webpage, their locations will be availab
 **stage 3:** the menu of this store will appear and they can pick their order and check the total of payment.
 **stage 4:** the customer needs to input his information and if he wants to add any extra notes about his order then a countdown screen will appear, to show his approximate time arrival until he reach the store.
 
-
-
+**Wireframe of CoffeCatchers:**
+![Wireframe](imges\wireframe\first-two-pages.png) ![Wireframe](imges\wireframe\second-two-pages.png) ![Wireframe](imges\wireframe\finalPage.png) 
 
 **This website is powered by:**
 - Aya Akrabawi
