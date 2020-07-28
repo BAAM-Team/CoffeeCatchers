@@ -81,14 +81,14 @@ var brandProducts = [
             {
                 "productImage": "imges/productImages/starBucks/cookies/dippedMadeleines.jpg",
                 "productName": "dippedMadeleines",
-                "productPrice": 1.5
+                "productPrice": 3.5
             }, {
                 "productImage": "imges/productImages/starBucks/cookies/madeleines.jpg",
                 "productName": "madeleines",
-                "productPrice": 1.5
+                "productPrice": 2.5
             }, {
-                "productImage": "imges/productImages/starBucks/cookies/ripVanWafelsHoney_Oats.jpg",
-                "productName": "ripVanWafelsHoney_Oats",
+                "productImage": "imges/productImages/starBucks/cookies/ripVanWafelsHoney&Oats.jpg",
+                "productName": "ripVanWafelsHoney&Oats",
                 "productPrice": 1.5
             }, {
                 "productImage": "imges/productImages/starBucks/cookies/shortBreadCookies.jpg",
@@ -97,60 +97,56 @@ var brandProducts = [
             }, {
                 "productImage": "imges/productImages/starBucks/cookies/vanillaBiscottiWithAlmonds.jpg",
                 "productName": "vanillaBiscottiWithAlmonds",
-                "productPrice": 1.5
+                "productPrice": 2.5
             }
         ]
     },
     {
         "HotDrinks": [
             {
-                "productImage": "imges/productImages/gloriaJeans/cookies/cocoloco.png",
+                "productImage": "imges/productImages/gloriaJeans/hotDrinks/cocoloco.png",
                 "productName": "cocoloco",
-                "productPrice": 1.5
+                "productPrice": 2.5
             },
             {
-                "productImage": "imges/productImages/gloriaJeans/cookies/mochacoconut.jpg",
+                "productImage": "imges/productImages/gloriaJeans/hotDrinks/mochacoconut.jpg",
                 "productName": "mochacoconut",
-                "productPrice": 1.5
+                "productPrice": 3
             }
         ],
         "ColdDrinks": [
             {
-                "productImage": "imges/productImages/gloriaJeans/cookies/caramelMocha.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/caramelMocha.jpg",
                 "productName": "caramelMocha",
-                "productPrice": 1.5
+                "productPrice": 2
             },
             {
-                "productImage": "imges/productImages/gloriaJeans/cookies/chocolateAvalanche.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/chocolateAvalanche.jpg",
                 "productName": "chocolateAvalanche",
-                "productPrice": 1.5
+                "productPrice": 3.5
             }, {
-                "productImage": "imges/productImages/gloriaJeans/cookies/caramelMocha.jpg",
-                "productName": "caramelMocha",
-                "productPrice": 1.5
-            }, {
-                "productImage": "imges/productImages/gloriaJeans/cookies/madagascarVanilaCaramel.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/madagascarVanilaCaramel.jpg",
                 "productName": "madagascarVanilaCaramel",
-                "productPrice": 1.5
+                "productPrice": 4.5
             }, {
-                "productImage": "imges/productImages/gloriaJeans/cookies/mintChocolateBomb.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/mintChocolateBomb.jpg",
                 "productName": "mintChocolateBomb",
-                "productPrice": 1.5
+                "productPrice": 3.5
             }, {
-                "productImage": "imges/productImages/gloriaJeans/cookies/water.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/water.jpg",
                 "productName": "water",
-                "productPrice": 1.5
+                "productPrice": 0.5
             }, {
-                "productImage": "imges/productImages/gloriaJeans/cookies/whiteChocolateCaramelMocha.jpg",
+                "productImage": "imges/productImages/gloriaJeans/coldDrinks/whiteChocolateCaramelMocha.jpg",
                 "productName": "whiteChocolateCaramelMocha",
-                "productPrice": 1.5
+                "productPrice": 2.5
             }
         ],
         "Cookies": [
             {
                 "productImage": "imges/productImages/gloriaJeans/cookies/gloriaCroissant.jpg",
-                "productName": "whiteChocolateCaramelMocha",
-                "productPrice": 1.5
+                "productName": "gloriaCroissant",
+                "productPrice": 3.5
             }, {
                 "productImage": "imges/productImages/gloriaJeans/cookies/macadamiaCookie.jpg",
                 "productName": "macadamiaCookie",
@@ -158,7 +154,7 @@ var brandProducts = [
             }, {
                 "productImage": "imges/productImages/gloriaJeans/cookies/pistachioCookies.jpg",
                 "productName": "pistachioCookies",
-                "productPrice": 1.5
+                "productPrice": 2.5
             }
         ]
     }, {
@@ -296,11 +292,11 @@ var brandProducts = [
                 "productName": "mixedCheese",
                 "productPrice": 3.5
             }, {
-                "productImage": "imges/dimitris/cookies/smokedSteak.jpg",
+                "productImage": "imges/dimitris/snacks/smokedSteak.jpg",
                 "productName": "smokedSteak",
                 "productPrice": 4
             }, {
-                "productImage": "imges/dimitris/cookies/smokedTurkey.jpg",
+                "productImage": "imges/dimitris/snacks/smokedTurkey.jpg",
                 "productName": "smokedTurkey",
                 "productPrice": 5
             }
@@ -431,17 +427,17 @@ var allBranches = [
     ], [
         "GloriaJeans BarkaMall",
         [31.9551826, 35.8661491],
-        "imges/productImages/gloriaJeans/mainPicture/BarkaMall.jpg",
+        "imges/productImages/gloriaJeans/mainImage/BarkaMall.jpg",
         brandProducts[1]
     ], [
         "GloriaJeans MadenahSt",
         [31.9930684, 35.8694381],
-        "imges/productImages/gloriaJeans/mainPicture/MadenahSt.jpg",
+        "imges/productImages/gloriaJeans/mainImage/MadenahSt.jpg",
         brandProducts[1]
     ], [
         "GloriaJeans QueenRaniaSt",
         [32.0154562, 35.8672548],
-        "imges/productImages/gloriaJeans/mainPicture/QueenRaniaSt.jpg",
+        "imges/productImages/gloriaJeans/mainImage/QueenRaniaSt.jpg",
         brandProducts[1]
     ], [
         "costaCoffe6CircleZahranSt",
