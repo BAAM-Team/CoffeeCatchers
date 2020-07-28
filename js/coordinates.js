@@ -12,33 +12,297 @@ var brandProducts = [
     {
         "HotDrinks": [
             {
-                "productImage": "image/Hot-Chocolate-Recipe-Fifteen-Spatulas-1.jpg",
-                "productName": "hot chocolate",
+                "productImage": "imges/productImages/starBucks/hotDrinks/caffèAmericano.jpg",
+                "productName": "caffèAmericano",
                 "productPrice": 4
             },
             {
-                "productImage": "image/latte-small.jpg",
-                "productName": "latte",
+                "productImage": "imges/productImages/starBucks/hotDrinks/caffMisto.jpg",
+                "productName": "caffMisto",
                 "productPrice": 3.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/cappuccino.jpg",
+                "productName": "cappuccino",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/cinnamonDolcecrème.jpg",
+                "productName": "cinnamonDolcecrème",
+                "productPrice": 4.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/hotChocolate.jpg",
+                "productName": "hotChocolate",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/steamedAppleJuice.jpg",
+                "productName": "steamedAppleJuice",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/steamedMilk.jpg",
+                "productName": "steamedMilk",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/vanillaCrème.jpg",
+                "productName": "vanillaCrème",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/productImages/starBucks/hotDrinks/whiteHotChocolate.jpg",
+                "productName": "whiteHotChocolate",
+                "productPrice": 4
             }
         ],
         "ColdDrinks": [
             {
-                "productImage": "image/f608e54246f840d36dd543c9737677f998-23-ice-coffee.rhorizontal.w700.jpg",
-                "productName": "iced coffee",
+                "productImage": "imges/productImages/starBucks/coldDrinks/dragonDrink.jpg",
+                "productName": "dragonDrink",
                 "productPrice": 2.75
-            },
-            {
-                "productImage": "image/brands-pure-life-bottle.jpg",
-                "productName": "water",
-                "productPrice": 0.5
+            }, {
+                "productImage": "imges/productImages/starBucks/coldDrinks/icedCaffèAmericano.jpg",
+                "productName": "icedCaffèAmericano",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/productImages/starBucks/coldDrinks/icedGoldenGingerDrink.jpg",
+                "productName": "icedGoldenGingerDrink",
+                "productPrice": 4.5
+            }, {
+                "productImage": "imges/productImages/starBucks/coldDrinks/icedGreenGeningerDrink.jpg",
+                "productName": "icedGreenGeningerDrink",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/productImages/starBucks/coldDrinks/icedGuavaPassionfruitDrink.jpg",
+                "productName": "icedGuavaPassionfruitDrink",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/productImages/starBucks/coldDrinks/pinkDrink.jpg",
+                "productName": "pinkDrink",
+                "productPrice": 4.5
             }
         ],
         "Cookies": [
             {
-                "productImage": "image/best-chocolate-chip-cookies-recipe-ever-no-chilling-1-e1549147195343.jpg",
-                "productName": "chocolate chip cookies",
+                "productImage": "imges/productImages/starBucks/cookies/dippedMadeleines.jpg",
+                "productName": "dippedMadeleines",
                 "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/starBucks/cookies/madeleines.jpg",
+                "productName": "madeleines",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/starBucks/cookies/ripVanWafelsHoney_Oats.jpg",
+                "productName": "ripVanWafelsHoney_Oats",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/starBucks/cookies/shortBreadCookies.jpg",
+                "productName": "shortBreadCookies",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/starBucks/cookies/vanillaBiscottiWithAlmonds.jpg",
+                "productName": "vanillaBiscottiWithAlmonds",
+                "productPrice": 1.5
+            }
+        ]
+    },
+    {
+        "HotDrinks": [
+            {
+                "productImage": "imges/productImages/gloriaJeans/cookies/cocoloco.png",
+                "productName": "cocoloco",
+                "productPrice": 1.5
+            },
+            {
+                "productImage": "imges/productImages/gloriaJeans/cookies/mochacoconut.jpg",
+                "productName": "mochacoconut",
+                "productPrice": 1.5
+            }
+        ],
+        "ColdDrinks": [
+            {
+                "productImage": "imges/productImages/gloriaJeans/cookies/caramelMocha.jpg",
+                "productName": "caramelMocha",
+                "productPrice": 1.5
+            },
+            {
+                "productImage": "imges/productImages/gloriaJeans/cookies/chocolateAvalanche.jpg",
+                "productName": "chocolateAvalanche",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/caramelMocha.jpg",
+                "productName": "caramelMocha",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/madagascarVanilaCaramel.jpg",
+                "productName": "madagascarVanilaCaramel",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/mintChocolateBomb.jpg",
+                "productName": "mintChocolateBomb",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/water.jpg",
+                "productName": "water",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/whiteChocolateCaramelMocha.jpg",
+                "productName": "whiteChocolateCaramelMocha",
+                "productPrice": 1.5
+            }
+        ],
+        "Cookies": [
+            {
+                "productImage": "imges/productImages/gloriaJeans/cookies/gloriaCroissant.jpg",
+                "productName": "whiteChocolateCaramelMocha",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/macadamiaCookie.jpg",
+                "productName": "macadamiaCookie",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/productImages/gloriaJeans/cookies/pistachioCookies.jpg",
+                "productName": "pistachioCookies",
+                "productPrice": 1.5
+            }
+        ]
+    }, {
+        "HotDrinks": [
+            {
+                "productImage": "imges/costaCoffee/hotDrink/caramelCortado.jpg ",
+                "productName": "caramelCortado",
+                "productPrice": 6
+            },
+            {
+                "productImage": "imges/costaCoffee/hotDrink/flatWhite.jpg",
+                "productName": "flatWhite",
+                "productPrice": 4
+            }, {
+                "productImage": "imges/costaCoffee/hotDrink/honeycombCappuccino.jpg",
+                "productName": "honeycombCappuccino",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/costaCoffee/hotDrink/honeyComblattemacchiato.jpg",
+                "productName": "honeyComblattemacchiato",
+                "productPrice": 5
+            }, {
+                "productImage": "imges/costaCoffee/hotDrink/latte.jpg",
+                "productName": "latte",
+                "productPrice": 5
+            }, {
+                "productImage": "imges/costaCoffee/hotDrink/mocha.jpg",
+                "productName": "mocha",
+                "productPrice": 6
+            }
+        ],
+        "ColdDrinks": [
+            {
+                "productImage": "imges/costaCoffee/coldDrink/classicLemonade.jpg",
+                "productName": "classicLemonade",
+                "productPrice": 5
+            },
+            {
+                "productImage": "imges/costaCoffee/coldDrink/honeyCombicedcappuccino.jpg",
+                "productName": "honeyCombicedcappuccino",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/costaCoffee/coldDrink/honeycombIcedlatte.jpg",
+                "productName": "honeycombIcedlatte",
+                "productPrice": 4.5
+            }, {
+                "productImage": "imges/costaCoffee/coldDrink/mangoAndpassionfruitcooler.jpg",
+                "productName": "mangoAndpassionfruitcooler",
+                "productPrice": 4.5
+            }, {
+                "productImage": "imges/costaCoffee/coldDrink/strawberrColdbrewcoffee.jpg",
+                "productName": "strawberrColdbrewcoffee",
+                "productPrice": 4
+            }
+        ],
+        "Cookies": [
+            {
+                "productImage": "imges/costaCoffee/cookies/chocolateCaramelhazelnutcookie.jpg",
+                "productName": "chocolateCaramelhazelnutcookie",
+                "productPrice": 1.5
+            }, {
+                "productImage": "imges/costaCoffee/cookies/fruitOat.jpg",
+                "productName": "fruitOat",
+                "productPrice": 3
+            }, {
+                "productImage": "imges/costaCoffee/cookies/jammyShort.jpg",
+                "productName": "jammyShort",
+                "productPrice": 5
+            }, {
+                "productImage": "imges/costaCoffee/cookies/sheepMallow.jpg",
+                "productName": "sheepMallow",
+                "productPrice": 6
+            }, {
+                "productImage": "imges/costaCoffee/cookies/walkingGinger.jpg",
+                "productName": "walkingGinger",
+                "productPrice": 4
+            }
+        ]
+    }, {
+        "HotDrinks": [
+            {
+                "productImage": "imges/dimitris/hotDrink/cappuccino.jpg ",
+                "productName": "cappuccino",
+                "productPrice": 2.5
+            },
+            {
+                "productImage": "imges/dimitris/hotDrink/Coffee.jpg",
+                "productName": "Coffee",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/dimitris/hotDrink/latte.jpg",
+                "productName": "latte",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/dimitris/hotDrink/mocha.jpg",
+                "productName": "mocha",
+                "productPrice": 2
+            }, {
+                "productImage": "imges/dimitris/hotDrink/nescafe.jpg",
+                "productName": "nescafe",
+                "productPrice": 1.5
+            }
+        ],
+        "ColdDrinks": [
+            {
+                "productImage": "imges/dimitris/coldDrink/caramelFrappe.png",
+                "productName": "caramelFrappe",
+                "productPrice": 3.5
+            },
+            {
+                "productImage": "imges/dimitris/coldDrink/coldBrew.png",
+                "productName": "coldBrew",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/dimitris/coldDrink/icedLatte.png",
+                "productName": "icedLatte",
+                "productPrice": 3
+            }, {
+                "productImage": "imges/dimitris/coldDrink/Karkadeeh.png",
+                "productName": "Karkadeeh",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/dimitris/coldDrink/mochaFrappe.png",
+                "productName": "mochaFrappe",
+                "productPrice": 2.5
+            }, {
+                "productImage": "imges/dimitris/coldDrink/spanishLatte.png",
+                "productName": "spanishLatte",
+                "productPrice": 4
+            }
+        ],
+        "Cookies": [
+            {
+                "productImage": "imges/dimitris/snacks/mixedCheese.jpg",
+                "productName": "mixedCheese",
+                "productPrice": 3.5
+            }, {
+                "productImage": "imges/dimitris/cookies/smokedSteak.jpg",
+                "productName": "smokedSteak",
+                "productPrice": 4
+            }, {
+                "productImage": "imges/dimitris/cookies/smokedTurkey.jpg",
+                "productName": "smokedTurkey",
+                "productPrice": 5
             }
         ]
     },
@@ -125,36 +389,90 @@ var brandProducts = [
 // This list for all branches (not the new add branches) include the name,location, mainPicture, Products.
 var allBranches = [
     [
-        "StarBucks Queen Rania St, Amman",
-        [31.9852183, 35.9079837],
-        "imges/mainImage/shutterstock_1075910024.0.jpg",
+        "Starbucks Abdallah Hussin.St",
+        [31.9659957, 35.8450186],
+        "imges/productImages/starBucks/mainPicture/starbucksAbdallahHussinSt.jpg",
         brandProducts[0]
-    ],
-    [
-        "Starbucks Abdoun",
-        [31.9419497, 35.8877175],
-        "imges/mainImage/shutterstock_1075910024.0.jpg",
+    ], [
+        "Starbucks Gardens",
+        [31.9823845, 35.8642779],
+        "imges/productImages/starBucks/mainPicture/starbucksGardens.jpg",
         brandProducts[0]
-    ],[
-        "Starbucks Abdoun",
-        [31.9019397, 35.8077170],
-        "image/2017-04-04.jpg",
+    ], [
+        "Starbucks City Mall",
+        [31.980709, , 35.8376655],
+        "imges/productImages/starBucks/mainPicture/starbucksCityMall.jpg",
         brandProducts[0]
-    ],[
+    ], [
+        "Starbucks Dabouq",
+        [31.99785, 35.8219585],
+        "imges/productImages/starBucks/mainPicture/starbucksDabouq.jpg",
+        brandProducts[0]
+    ], [
+        "StarBucks Galerya Mall",
+        [31.9565613, 35.9456108],
+        "imges/productImages/starBucks/mainPicture/starBucksGaleryaMall.jpg",
+        brandProducts[0]
+    ], [
+        "Starbucks Jubeiha",
+        [31.9852482, 35.9089682],
+        "imges/productImages/starBucks/mainPicture/starbucksJubeiha.jpg",
+        brandProducts[0]
+    ], [
+        "starbucks Swifiea",
+        [31.9530472, 35.8554883],
+        "imges/productImages/starBucks/mainPicture/starbucksSwifiea.jpg",
+        brandProducts[0]
+    ], [
+        "starbucks Tag Mall",
+        [31.9412776, 35.8876749],
+        "imges/productImages/starBucks/mainPicture/starbucksTagMall.jpg",
+        brandProducts[0]
+    ], [
+        "GloriaJeans BarkaMall",
+        [31.9551826, 35.8661491],
+        "imges/productImages/gloriaJeans/mainPicture/BarkaMall.jpg",
+        brandProducts[1]
+    ], [
+        "GloriaJeans MadenahSt",
+        [31.9930684, 35.8694381],
+        "imges/productImages/gloriaJeans/mainPicture/MadenahSt.jpg",
+        brandProducts[1]
+    ], [
+        "GloriaJeans QueenRaniaSt",
+        [32.0154562, 35.8672548],
+        "imges/productImages/gloriaJeans/mainPicture/QueenRaniaSt.jpg",
+        brandProducts[1]
+    ], [
         "costaCoffe6CircleZahranSt",
         [31.914049, 35.8381798],
-        "imges/costaCoffee/locationes/location1.jpg",
-        brandProducts[1]
-    ],[
+        "imges/costaCoffee/locationes/6CircleZahranSt.jpg",
+        brandProducts[2]
+    ], [
         "costaCoffePrinceRashed",
         [31.9176626, 35.8323262],
-        "imges/costaCoffee/locationes/location2bolvared.jpg",
-        brandProducts[1]
-    ],[
+        "imges/costaCoffee/locationes/PrinceRashed.jpg",
+        brandProducts[2]
+    ], [
         "costaCoffeJamAlAlJuqahSt38",
         [31.9633799, 35.9012039],
-        "imges/costaCoffee/locationes/location3swafi.jpg",
-        brandProducts[1]
+        "imges/costaCoffee/locationes/JamAlAlJuqahSt38.jpg",
+        brandProducts[2]
+    ], [
+        "Dimitris City mall P1 services Floor",
+        [31.9633799, 35.9012039],
+        "imges/dimitris/location/DimitrisCitymallP1servicesFloor.jpg",
+        brandProducts[3]
+    ], [
+        "DimitrisMecca st",
+        [31.9633799, 35.9012039],
+        "imges/dimitris/location/DimitrisMeccaSt.jpg",
+        brandProducts[3]
+    ], [
+        "Dimitris Abdali Boulevard",
+        [31.9633799, 35.9012039],
+        "imges/dimitris/location/DimitrisAbdaliBoulevard.jpg",
+        brandProducts[3]
     ]
 ]
 
@@ -252,4 +570,3 @@ catchIt.addEventListener("submit", function () {
         document.location.href = 'suggLocations.html';
     }
 })
-
