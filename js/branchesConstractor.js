@@ -1,10 +1,11 @@
 // This is the constructor that responsable for make clients branches as a objects.
-function Branche(name, location, mainPicture, products) {
+function Branche(name, location, mainPicture, products,iframe) {
     this.name = name;
     this.location = location;
     this.mainPicture = mainPicture;
     this.products = products;
     this.distance;
+    this.iframe=iframe;
 }
 
 // this list include all brands menu (products)
