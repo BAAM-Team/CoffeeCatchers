@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 var choosenBranch = JSON.parse(localStorage.getItem("choosenBranch"))
 var product = choosenBranch.products
 var productType = Object.keys(product)
@@ -131,7 +131,7 @@ function reply_click(clicked_id) {
         link.href = "cart.html"
         td.append(link)
         var cartImage = document.createElement("img")
-        cartImage.setAttribute("src", "image/cartImage.png")
+        cartImage.setAttribute("src",  "imges/icons/cartImage1.png")
         cartImage.setAttribute("width", "25px")
         link.append(cartImage)
     }
