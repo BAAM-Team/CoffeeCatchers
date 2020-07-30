@@ -15,6 +15,7 @@ table.appendChild(tr);
 renderLocation();
 renderShowMoreButton();
 // write our data in the table 
+var limit=0;
 function renderLocation() {
     for (numberOfImages; numberOfImages < branchWithinRangeList.length; numberOfImages++) {
         var td = document.createElement('td');
@@ -40,13 +41,13 @@ function renderLocation() {
     }
 }
 function renderShowMoreButton() {
-    var main = document.getElementById('main');
+    var divBottun = document.getElementById('divBottun');
     var button = document.createElement('button');
     button.textContent = "Show more";
     button.setAttribute('onclick', 'renderSecondRow()');
-    console.log('Iam here');
+    // console.log('Iam here');
     button.setAttribute('id', 'bottunOfShowmore');
-    main.appendChild(button);
+    divBottun.appendChild(button);
 }
 function renderSecondRow() {
     console.log('second row data');
@@ -78,9 +79,10 @@ function renderSecondRow() {
             numberOfImages++
             break;
         }
-    } if (numberOfImages < branchWithinRangeList.length) {
-        button.remove();
-    }
+        limit++;
+    } if (limit >2) {
+        divBottun.remove();
+        }
 
 }
 
