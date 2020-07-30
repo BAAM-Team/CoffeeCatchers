@@ -14,7 +14,7 @@
     <img src="background2.jpg" alt="back" style="z-index: -20; width: 100%;">
     <header>
         <nav>
-            <a id="top-nav" href="suggLocations.html"> <img id="left-arrow" src="imges/icons/left.png" alt="backtohome">
+            <a id="top-nav" href="testsuggLocations.html"> <img id="left-arrow" src="imges/icons/left.png" alt="backtohome">
                 <span>
                     Home
                 </span>
@@ -25,19 +25,23 @@
     <main>
         <aside id="orderCart">
             <h1>Your Cart</h1>
-            <div id="selectedProductCart"></div>
-            <p id="Total"></p>
+            <div id="selectedProductCart">
+               
+            </div>
+            <p id="totalID"></p>
         </aside>
         <section>
             <form id="orderForm">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Name">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit" id="purchase">
-                <span id="timeToReady">5:00</span>
+                <input type="text" id="inputName" placeholder="Your Name">
+                <input type="number" id="inputPhoneNo" placeholder="Your Phone">
+                <textarea name="" id="inputNote" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Order Now!" id="purchase">
+                <div id="timeToReady"></div>
             </form>
+            
         </section>
     </main>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
