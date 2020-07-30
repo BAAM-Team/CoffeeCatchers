@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 // This is the constructor that responsable for make clients branches as a objects.
 
@@ -518,12 +518,20 @@ var catchIt = document.getElementById("catchIt")
 
 catchIt.addEventListener("submit", function () {
     event.preventDefault();
-    var rangeUserNeed = Number(event.target.rangeUserNeed.value)
+     // deleted the input range by user
+    // var rangeUserNeed = Number(event.target.rangeUserNeed.value)
+     
+    // Parse the ourClients  from the local storage.
+      var ourClients = JSON.parse(localStorage.getItem("ourClients"))
+      // Parse the  ourNewClients from the local storage if it dosenot have data
+   if (localStorage.getItem("ourNewClients")!==null) {
+   
+       var ourNewClients = JSON.parse(localStorage.getItem("ourNewClients"))
+   }else{
+       var ourNewClients=[];
+   }
 
-    // Parse the ourClients and ourNewClients from the local storage.
-    var ourClients = JSON.parse(localStorage.getItem("ourClients"))
-    var ourNewClients = JSON.parse(localStorage.getItem("ourNewClients"))
-
+   
     // This two for loop to get the ourClients and ourNewClients in one list to make easy to search the distance to all branches 
     var allClients = [];
     for (var i = 0; i < ourClients.length; i++) {
@@ -561,8 +569,10 @@ catchIt.addEventListener("submit", function () {
             dist = dist * 60 * 1.1515;
             dist = dist * 1.609344;
 
+            
             //This if statment to ensure that only take the locations within the range.
-            if (rangeUserNeed > dist) {
+            // radius of earth 6351
+            if (6351 > dist) {
 
                 // Add the distance for the branches within the range( inside the event listener to reset every time.)
                 allClients[i].distance = dist

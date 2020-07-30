@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 var numberOfImages = 1;
 // Adding Id's names for the branches 
 var ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']
