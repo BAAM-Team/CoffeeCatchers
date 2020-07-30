@@ -127,11 +127,13 @@ function reply_click(clicked_id) {
         var td = document.createElement("td")
         tr.append(td)
         var link = document.createElement("a")
-        link.href = "cart.html"
+        link.href = "order.html"
         td.append(link)
         var cartImage = document.createElement("img")
         cartImage.setAttribute("src", "image/cartImage.png")
         cartImage.setAttribute("width", "25px")
         link.append(cartImage)
     }
+    var totalStringify = JSON.stringify(total)
+    localStorage.setItem("settotal", totalStringify)
 }
