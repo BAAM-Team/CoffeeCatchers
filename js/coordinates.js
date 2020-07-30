@@ -1,4 +1,7 @@
+'use strict'
+
 // This is the constructor that responsable for make clients branches as a objects.
+
 function Branche(name, location, mainPicture, products,iframe) {
     this.name = name;
     this.location = location;

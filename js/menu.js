@@ -1,3 +1,4 @@
+'use strict'
 var choosenBranch = JSON.parse(localStorage.getItem("choosenBranch"))
 var product = choosenBranch.products
 var productType = Object.keys(product)
@@ -134,4 +135,6 @@ function reply_click(clicked_id) {
         cartImage.setAttribute("width", "25px")
         link.append(cartImage)
     }
+    var totalStringify = JSON.stringify(total)
+    localStorage.setItem("settotal", totalStringify)
 }
