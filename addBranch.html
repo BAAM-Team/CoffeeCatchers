@@ -3,28 +3,25 @@
 
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/stylepage3.css">
     <title>CoffeeCatchers - Add Branch</title>
 </head>
 
 <body id="demo">
-    <img src="background2.jpg" alt="back" style="z-index: -20; width: 100%;">
     <header>
-        <a href="index.html">Home</a>
-        <img src="" alt="logo">
+        <a id="top-nav" href="index.html">Home</a>
+        <img id="logoImg" src="imges/log/download.ico" alt="logo">
     </header>
     <main>
+        <img src="imges/background/b3ca1721a74bcee0bf4001e2388a3918.jpg" alt="back" style="z-index: -50; width: 100%;height: 100%;">
         <form id="addBranchForm">
             <fieldset>
-                <legend>
-                    Add Branch
-                </legend>
                 <table>
                     <tr>
                         <td>
                             <label for="brandName">Brand Name</label>
                         </td>
-                        <td>
+                        <td > 
                             <select  id="brandName" >
                                 <option value="0">StarBucks</option>
                                 <option value="1">Dimitris</option>
@@ -35,7 +32,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="name">name</label>
+                            <label for="name">Name</label>
                         </td>
                         <td>
                             <input type="text" id="name" placeholder="Brand StreetName.st, City">
@@ -43,7 +40,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="latitude">latitude</label>
+                            <label for="latitude">Latitude</label>
                         </td>
                         <td>
                             <input type="text" id="latitude" placeholder="latitude">
@@ -51,7 +48,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="longitude">longitude</label>
+                            <label for="longitude">Longitude</label>
                         </td>
                         <td>
                             <input type="text" id="longitude" placeholder="longitude">
@@ -67,7 +64,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input  type="submit" order="addBranch">
+                            <input id="submitButton"  type="submit" order="addBranch" value="ADD BRANCH"> 
                         </td>
                     </tr>
                 </table>
