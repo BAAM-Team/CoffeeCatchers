@@ -11,7 +11,7 @@ if (localStorage.getItem("cart") !== null) {
 
     var minCartDiv = document.getElementById("minCart")
     var minCart = document.createElement("table")
-    minCart.setAttribute("style", "background-color: red; width : 80%; position: fixed; bottom: 0px; right:0px;")
+    minCart.setAttribute("style", "background-color: white; width : 80%; position: fixed; bottom: 0px; right:0px;")
     minCartDiv.append(minCart)
 
     var tr = document.createElement("tr")
@@ -29,7 +29,10 @@ if (localStorage.getItem("cart") !== null) {
     var cartImage = document.createElement("img")
     cartImage.setAttribute("src", "imges/icons/cartImage1.png")
     cartImage.setAttribute("width", "25px")
-    link.append(cartImage)
+    var spantext=document.createElement('span')
+    spantext.textContent='My Cart'
+    link.append(spantext);
+    link.append(cartImage);
 }
 
 // Call the Object of the selected branch that user want it, then take only the key product object and save it in variable name it product.
@@ -162,7 +165,7 @@ function reply_click(clicked_id) {
 
         var minCartDiv = document.getElementById("minCart")
         var minCart = document.createElement("table")
-        minCart.setAttribute("style", "background-color: red; width : 80%; position: fixed; bottom: 0px; right:0px;")
+        minCart.setAttribute("style", "background-color: white; width : 80%; position: fixed; bottom: 0px; right:0px;")
         minCartDiv.append(minCart)
 
         var tr = document.createElement("tr")

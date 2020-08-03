@@ -1,8 +1,16 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
 table  {
     display: inline-block;
     margin: 15px;
     text-align: center;
     font-weight: bold;
+    /* position: absolute;
+    top: 7%;
+    right: 3%; */
+
     
 }
 table input {
@@ -12,6 +20,75 @@ table input {
 }
 
 
+
 #productDetails div {
-    border: 1px dotted;
+   
+    /* opacity: 50%; */
+    background-color: rgba(255, 235, 205, 0.308);
+    margin-top: 50px;
 } 
+#top-nav {
+    font-size: 40px;
+    color:wheat;
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    opacity: 90%;
+    width: 200px;
+    text-decoration: none;
+}
+#logoImg {
+    border-radius: 50%;
+    /* position: absolute;
+    left: 7%;
+    top: 6%; */
+  width: 100px;
+
+}
+#top-nav:hover {
+    color:rgb(184, 119, 55);
+}
+th a {
+text-align: left;
+margin: 30px;
+line-height:20px;
+text-decoration: none;
+color:rgb(143, 97, 13) ;
+font-size: 25px;
+transition: linear .21s;
+
+
+}
+th a:hover{
+    color:wheat;
+    font-weight: bolder;
+
+}
+#productType{
+    margin-top: 50px 
+}
+#background{
+    position: fixed;
+  
+}
+button{
+    border-radius: 35%;
+    color: wheat;
+    background-color:rgba(187, 133, 33, 0.185);
+}
+ tr img{
+    border-radius: 30%;
+}
+#minCart a{
+ position: relative;
+ left:800px;
+ text-decoration: none;
+ color: black;
+ 
+}
+#minCart a span{
+  position: relative;
+  top: -6px;
+  left: -10px;
+}
+
