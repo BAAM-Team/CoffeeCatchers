@@ -402,21 +402,16 @@ addBranchForm.addEventListener('submit', function () {
 
     // Target the data inside the inputs tags and add each of them in speareted variable.
     var brandName = Number(event.target.brandName.value.split(','))
-    console.log(brandName)
 
     var name = event.target.name.value
-    console.log(name)
 
     var latitude = Number(event.target.latitude.value)
-    console.log(latitude)
+
     var longitude = Number(event.target.longitude.value)
-    console.log(longitude)
+
     var location = [latitude, longitude]
 
     var mainPicture = event.target.mainPicture.value
-    console.log(mainPicture)
-
-
 
     // Add the new branch in the main constructor, and push it in the main list for newObjectBranchList.
     newObjectBranch = new Branche(name, location, mainPicture, brandProducts[brandName])

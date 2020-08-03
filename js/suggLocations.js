@@ -34,7 +34,6 @@ function renderLocation() {
         td.appendChild(image)
         image.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(branchWithinRangeList[numberOfImages - 1]);
         image.setAttribute('src', mainImage);
         var distanceOfBranch = document.createElement('td');
         distanceOfBranch.textContent = 'The distance : '+Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
@@ -55,12 +54,10 @@ function renderShowMoreButton() {
     var button = document.createElement('button');
     button.textContent = "Show more";
     button.setAttribute('onclick', 'renderSecondRow()');
-    // console.log('Iam here');
     button.setAttribute('id', 'bottunOfShowmore');
     divBottun.appendChild(button);
 }
 function renderSecondRow() {
-    console.log('second row data');
     var tr1 = document.createElement('tr');
     tr1.setAttribute('id', 'imageRow');
     var rowOfdictense1 = document.createElement('tr');
@@ -75,7 +72,6 @@ function renderSecondRow() {
         td1.appendChild(image1)
         image1.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(mainImage);
         image1.setAttribute('src', mainImage);
         var distanceOfBranch1 = document.createElement('td');
         distanceOfBranch1.textContent ='The distance : '+ Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';

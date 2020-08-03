@@ -586,14 +586,12 @@ catchIt.addEventListener("submit", function () {
                 branchWithinRangeList.push(branchWithinRange)
             }
         }
-        console.log(branchWithinRangeList)
         // Here we use if statement to make sure not go to other sugglocation page with no result.
         if (branchWithinRangeList.length == 0) {
             alert("Try raise you Range to find US")
         } else {
             // This function will sort our distance from low to high to make sure give the user the nearst branch.
             branchWithinRangeListSorted = branchWithinRangeList.sort(function (a, b) { return a.distance - b.distance })
-            console.log(branchWithinRangeListSorted)
         }
         // Add the branches that has been within the range and sorted from lower to higher in local storage.
         var branchWithinRangeListSortedStringify = JSON.stringify(branchWithinRangeListSorted)
