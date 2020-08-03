@@ -183,7 +183,10 @@ function reply_click(clicked_id) {
         var cartImage = document.createElement("img")
         cartImage.setAttribute("src", "imges/icons/cartImage1.png")
         cartImage.setAttribute("width", "25px")
-        link.append(cartImage)
+        var spantext=document.createElement('span')
+        spantext.textContent='My Cart'
+        link.append(spantext);
+        link.append(cartImage);
     }
 
 }
