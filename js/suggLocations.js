@@ -1,4 +1,14 @@
 // 'use strict'
+
+// This if statement use when only the user get inside a the menu of branch and add to cart then change his mind to select another branch.
+if (localStorage.getItem("cart") !== null) {
+    localStorage.removeItem("cart")
+}
+// // This if statement if user select a branch then git back to the suggLocation page will empty the key choosenBranch.
+if (localStorage.getItem("choosenBranch") !== null) {
+    localStorage.removeItem("choosenBranch")
+}
+
 var numberOfImages = 1;
 // Adding Id's names for the branches 
 var ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']

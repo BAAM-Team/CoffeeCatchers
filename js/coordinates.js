@@ -1,5 +1,11 @@
 // 'use strict'
 
+// This if statement use when only the user search (catch it) and go to suggLocation page then get back to the index will remove the branchWithinRangeListSorted key
+// This cause use will be effective when the user change his location every search.  
+if (localStorage.getItem("branchWithinRangeListSorted") !== null) {
+    localStorage.removeItem("branchWithinRangeListSorted")
+}
+
 // This is the constructor that responsable for make clients branches as a objects.
 
 function Branche(name, location, mainPicture, products,iframe) {
