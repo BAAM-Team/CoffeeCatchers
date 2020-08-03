@@ -1,5 +1,11 @@
 // 'use strict'
 
+// This if statement use when only the user search (catch it) and go to suggLocation page then get back to the index will remove the branchWithinRangeListSorted key
+// This cause use will be effective when the user change his location every search.  
+if (localStorage.getItem("branchWithinRangeListSorted") !== null) {
+    localStorage.removeItem("branchWithinRangeListSorted")
+}
+
 // This is the constructor that responsable for make clients branches as a objects.
 
 function Branche(name, location, mainPicture, products,iframe) {
@@ -580,14 +586,12 @@ catchIt.addEventListener("submit", function () {
                 branchWithinRangeList.push(branchWithinRange)
             }
         }
-        console.log(branchWithinRangeList)
         // Here we use if statement to make sure not go to other sugglocation page with no result.
         if (branchWithinRangeList.length == 0) {
             alert("Try raise you Range to find US")
         } else {
             // This function will sort our distance from low to high to make sure give the user the nearst branch.
             branchWithinRangeListSorted = branchWithinRangeList.sort(function (a, b) { return a.distance - b.distance })
-            console.log(branchWithinRangeListSorted)
         }
         // Add the branches that has been within the range and sorted from lower to higher in local storage.
         var branchWithinRangeListSortedStringify = JSON.stringify(branchWithinRangeListSorted)
