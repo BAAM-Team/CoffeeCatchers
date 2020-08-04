@@ -1,12 +1,16 @@
 /* for the back arrow */
+
 .container {
     display: flex;
     align-items: center;
     height: 100%;
     margin-bottom: -80px;
+    font-weight: bolder;
+    font-size: larger;
 }
 ul li {
     margin: 0 0 24px;
+    
 }
 .the-arrow {
     width: 64px;
@@ -26,10 +30,13 @@ ul li {
     background-color: #999;
 }
 .the-arrow.-left > .shaft:before {
-    transform: rotate(40deg);
+    transform: rotate(150deg);
+    left: -6px;
 }
 .the-arrow.-left > .shaft:after {
-    transform: rotate(-40deg);
+    transform: rotate(-150deg);
+    left: -6px;
+
 }
 .the-arrow.-right {
     top: 3px;
@@ -44,10 +51,14 @@ ul li {
     transition: all 0.5s;
 }
 .the-arrow.-right > .shaft:before {
-    transform: rotate(40deg);
+    transform: rotate(150deg);
+    left: -6px;
+
 }
 .the-arrow.-right > .shaft:after {
-    transform: rotate(-40deg);
+    transform: rotate(-150deg);
+    left: -6px;
+
 }
 .the-arrow > .shaft {
     background-color: #999;
@@ -98,10 +109,10 @@ ul li {
     background-color: #eaeaea;
 }
 .animated-arrow:hover > .the-arrow.-left > .shaft:before {
-    transform: rotate(40deg);
+    transform: rotate(150deg);
 }
 .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-    transform: rotate(-40deg);
+    transform: rotate(-150deg);
 }
 .animated-arrow:hover > .main {
     transform: translateX(80px);
@@ -398,4 +409,13 @@ input{
       bottom: 100%;
     }
   }
-  
+  #totalID {
+      position: fixed;
+      top: 79%;
+      color: rgb(83, 81, 81);
+      font-weight: bolder;
+      width: 300px;
+      height: 25px;
+      border-radius: 5%;
+      background-color: rgba(169, 177, 176, 0.842);
+  }
