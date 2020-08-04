@@ -52,7 +52,7 @@ function renderLocation() {
 function renderShowMoreButton() {
     var divBottun = document.getElementById('divBottun');
     var button = document.createElement('button');
-    button.textContent = "Show more";
+    button.textContent = "Show More";
     button.setAttribute('onclick', 'renderSecondRow()');
     button.setAttribute('id', 'bottunOfShowmore');
     divBottun.appendChild(button);

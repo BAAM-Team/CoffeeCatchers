@@ -1,8 +1,157 @@
+/* for the back arrow */
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: -80px;
+    font-weight: bolder;
+    font-size: larger;
+}
+ul li {
+    margin: 0 0 24px;
+    
+}
+.the-arrow {
+    width: 64px;
+    transition: all 0.2s;
+}
+.the-arrow.-left {
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+.the-arrow.-left > .shaft {
+    width: 0;
+    background-color: #999;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+    width: 0;
+    background-color: #999;
+}
+.the-arrow.-left > .shaft:before {
+    transform: rotate(150deg);
+    left: -6px;
+}
+.the-arrow.-left > .shaft:after {
+    transform: rotate(-150deg);
+    left: -6px;
+
+}
+.the-arrow.-right {
+    top: 3px;
+}
+.the-arrow.-right > .shaft {
+    width: 64px;
+    transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+    width: 8px;
+    transition-delay: 0.3s;
+    transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+    transform: rotate(150deg);
+    left: -6px;
+
+}
+.the-arrow.-right > .shaft:after {
+    transform: rotate(-150deg);
+    left: -6px;
+
+}
+.the-arrow > .shaft {
+    background-color: #999;
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0;
+    will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+    background-color: #999;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+    transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+    transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+    transform-origin: bottom right;
+}
+.animated-arrow {
+    display: inline-block;
+    color: #999;
+    font-size: 1.25em;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+}
+.animated-arrow:hover {
+    color: #eaeaea;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+    width: 64px;
+    transition-delay: 0.1s;
+    background-color: #eaeaea;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+    width: 8px;
+    transition-delay: 0.1s;
+    background-color: #eaeaea;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+    transform: rotate(150deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+    transform: rotate(-150deg);
+}
+.animated-arrow:hover > .main {
+    transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+    width: 0;
+    transform: translateX(200%);
+    transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+    width: 0;
+    transition-delay: 0;
+    transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+    transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+    transform: rotate(0);
+}
+.animated-arrow > .main {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+    margin: 0 16px 0 0;
+    line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+    position: relative;
+}
+ /* the end of arrow design */
+
 *{
-    color: rgb(64, 83, 75);
+    color: rgb(51, 66, 60);
 }
 body{
-    background-color: rgb(218, 188, 129);
+    background-color: rgb(240, 214, 163);
 }
 
 #logoImg {
@@ -62,9 +211,10 @@ main h2{
     
 }
 table{
-    border-spacing:0 80px;
-    width: 1250px;
-    margin-left: 10px;
+    border-collapse: separate;
+    border-spacing: 35px 80px;
+    width: 1350px;
+    margin-left: 50px;
 }
 
 strong{
@@ -79,8 +229,8 @@ strong{
         border-radius: 2%;
         width: 415px;
         height: 300px;
-        margin-left: 10px;
-        margin-right: 9px;
+        /* margin-left: 10px;
+        margin-right: 9px; */
         transition:   border-radius 5s ease-in;
         transition: width 0.21s, height 0.21s;
         cursor: pointer;
@@ -107,15 +257,16 @@ strong{
 
     }
     #bottunOfShowmore{
-        margin-top: 20px;
+        margin-top: -90px;
         margin-bottom: 20px;
         border-radius: 20px;
         padding: 10px;
         box-shadow: 5px 10px 18px #888888;
         font-size: 25px;
         cursor: pointer;
-        background-color: rgba(175, 208, 191, 0.623);
+        background-color: rgba(139, 35, 35, 0.74);
         transition: .5s;
+        border: none;
 
     }
    
