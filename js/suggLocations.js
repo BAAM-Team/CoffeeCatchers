@@ -1,4 +1,14 @@
 // 'use strict'
+
+// This if statement use when only the user get inside a the menu of branch and add to cart then change his mind to select another branch.
+if (localStorage.getItem("cart") !== null) {
+    localStorage.removeItem("cart")
+}
+// // This if statement if user select a branch then git back to the suggLocation page will empty the key choosenBranch.
+if (localStorage.getItem("choosenBranch") !== null) {
+    localStorage.removeItem("choosenBranch")
+}
+
 var numberOfImages = 1;
 // Adding Id's names for the branches 
 var ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']
@@ -15,6 +25,7 @@ table.appendChild(tr);
 renderLocation();
 renderShowMoreButton();
 // write our data in the table 
+var limit=0;
 function renderLocation() {
     for (numberOfImages; numberOfImages < branchWithinRangeList.length; numberOfImages++) {
         var td = document.createElement('td');
@@ -23,7 +34,6 @@ function renderLocation() {
         td.appendChild(image)
         image.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(branchWithinRangeList[numberOfImages - 1]);
         image.setAttribute('src', mainImage);
         var distanceOfBranch = document.createElement('td');
         distanceOfBranch.textContent = 'The distance : '+Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
@@ -40,16 +50,14 @@ function renderLocation() {
     }
 }
 function renderShowMoreButton() {
-    var main = document.getElementById('main');
+    var divBottun = document.getElementById('divBottun');
     var button = document.createElement('button');
     button.textContent = "Show more";
     button.setAttribute('onclick', 'renderSecondRow()');
-    console.log('Iam here');
     button.setAttribute('id', 'bottunOfShowmore');
-    main.appendChild(button);
+    divBottun.appendChild(button);
 }
 function renderSecondRow() {
-    console.log('second row data');
     var tr1 = document.createElement('tr');
     tr1.setAttribute('id', 'imageRow');
     var rowOfdictense1 = document.createElement('tr');
@@ -64,7 +72,6 @@ function renderSecondRow() {
         td1.appendChild(image1)
         image1.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(mainImage);
         image1.setAttribute('src', mainImage);
         var distanceOfBranch1 = document.createElement('td');
         distanceOfBranch1.textContent ='The distance : '+ Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
@@ -78,9 +85,10 @@ function renderSecondRow() {
             numberOfImages++
             break;
         }
-    } if (numberOfImages < branchWithinRangeList.length) {
-        button.remove();
-    }
+        limit++;
+    } if (limit >2) {
+        divBottun.remove();
+        }
 
 }
 

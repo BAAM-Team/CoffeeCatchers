@@ -4,24 +4,81 @@ a{
     
     
 }
-
-#logoImg {
-    border-radius: 50%;
-    position: absolute;
-  left: 45%;
-  top: 10%;
-  width: 150px;
-
-}
 #top-nav {
     font-size: 40px;
-    color: burlywood;
+    color: black;
     position: absolute;
-    top: 11%;
-    left: 5%;
+    top: 7%;
+    right: 3%;
     opacity: 90%;
     width: 200px;
+    
 }
 #left-arrow{
 width: 60px;
+}
+
+#addBranchForm{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    font-weight: 600;
+  top: 50%;
+  right: 32%;
+  
+  z-index: 2;
+  width: 500px;
+  text-align: center;
+}
+#logoImg {
+    border-radius: 50%;
+    position: absolute;
+    left: 7%;
+    top: 6%;
+  width: 100pxc;
+
+}
+#top-nav:hover {
+    color:rgb(102, 51, 0);
+}
+
+input , select{
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+label{
+    margin-left: 30px;
+    
+}
+#submitButton{
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    right: 40%;
+    margin-top: 50px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: linear 0.2s;
+    
+}
+
+table {
+    padding-top:50px ;
+    padding-bottom:100px ;
+}
+tr{
+    line-height:50px
+}
+::placeholder {
+    text-align: center;
+}
+
+#submitButton:hover{
+    color:rgb(102, 51, 0);
+    font-size: 14px;
+    box-shadow:2px 2px 2px 2px rgba(102, 51, 0 , 100 );
 }
