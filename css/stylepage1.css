@@ -8,7 +8,10 @@ img {
 }
 li {
     display: inline;
-    
+      
+}
+footer ul li a :hover{
+  width: 60px;
 }
 ul {
     position: absolute;
@@ -18,10 +21,12 @@ ul {
 #circlPhone {
     border-radius: 50%;
     margin-left: 20px;
+    transition: width 1s;
 }
 .contactIcon {
     margin-left: 20px;
-}
+    transition: width 1s;
+  }
 a{
     font-family: 'Ranchers', cursive;
     display: justify;   
@@ -73,7 +78,12 @@ p {
     right: 3%;
     opacity: 90%;
     width: 200px;
+    transition: width 1s;
     
+}
+#top-nav:hover{ 
+  width: 230px;
+  /* height: 300px; */
 }
 
 #catchIt button{
@@ -90,6 +100,7 @@ p {
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 700;
+  
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.41);
   /* box-shadow: 0 3px 0 0 #383838;
   border:3px solid transparent; */
@@ -122,6 +133,7 @@ p {
 #catchIt button:hover{
   -webkit-animation-play-state: paused; 
   animation-play-state: paused;
+
 }
 
 span {
