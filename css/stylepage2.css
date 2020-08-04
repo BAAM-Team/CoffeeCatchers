@@ -19,9 +19,14 @@ td{
 span{
     width: 70px;
 position: absolute;
-top: 280px;
-right: 15px;
-    background-color: rgba(230, 224, 225);    
+top: 270px;
+right: 40px;
+    background-color: rgba(230, 224, 225); 
+    box-shadow: 0 0 5px  #ebe1e1,
+    0 0 25px  #ebe1e1,
+    0 0 50px  #ebe1e1,
+    0 0 100px  #ebe1e1;
+    height: 20px;
 }
 main h2{
     font-family: sans-serif;
@@ -58,8 +63,10 @@ main h2{
 }
 table{
     border-spacing:0 80px;
-
+    width: 1250px;
+    margin-left: 10px;
 }
+
 strong{
     line-height: 50px;
     
@@ -70,9 +77,10 @@ strong{
     main table tr td img{
         box-shadow: 5px 10px 18px #888888;
         border-radius: 2%;
-        width: 420px;
+        width: 415px;
         height: 300px;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 9px;
         transition:   border-radius 5s ease-in;
         transition: width 0.21s, height 0.21s;
         cursor: pointer;
@@ -82,7 +90,7 @@ strong{
         /* height: ; */
     }
     main table tr td img:hover{
-        width: 450px;
+        width: 445px;
         height: 320px;
         /* border-radius: 50%; */
     }
@@ -95,6 +103,7 @@ strong{
     
     .container{
         width: 100%;
+        margin: auto auto;
 
     }
     #bottunOfShowmore{
@@ -104,7 +113,19 @@ strong{
         padding: 10px;
         box-shadow: 5px 10px 18px #888888;
         font-size: 25px;
-    }
-    #bottunOfShowmore{
+        cursor: pointer;
+        background-color: rgba(175, 208, 191, 0.623);
+        transition: .5s;
 
     }
+   
+    #bottunOfShowmore:hover {
+        background: rgba(139, 35, 35, 0.486);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(121, 18, 18, 0.486),
+                    0 0 25px rgba(121, 18, 18, 0.486),
+                    0 0 50px rgba(121, 18, 18, 0.486),
+                    0 0 100px rgba(121, 18, 18, 0.486);
+      }
+     
