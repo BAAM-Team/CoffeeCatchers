@@ -52,17 +52,17 @@
         <section>
             <div class="login-box">
                 <h2>Confirm your Order</h2>
-                <form>
+                <form id="orderForm">
                     <div class="user-box">
-                        <input type="text" required="">
+                        <input id="inputName" type="text" required="">
                         <label>Enter your name</label>
                     </div>
                     <div class="user-box">
-                        <input type="text" required="">
+                        <input id="inputPhoneNo" type="number" required="">
                         <label>Your phone number</label>
                     </div>
                     <div class="user-box">
-                        <input type="text" required="">
+                        <input id="inputNote" type="text" required="">
                         <label>Enter your note</label>
                     </div>
                     <a href="#">
@@ -72,6 +72,8 @@
                         <span></span>
                         <input type="submit" value="Order Now!" id="purchase">
                     </a>
+                    <div id="timeToReady"></div>
+
                 </form>
             </div>
         </section>

@@ -215,10 +215,17 @@ input{
     background-color: rgba(255, 0, 0, 0);
     border:none;
     color: white;
-    font-size: larger;
+    font-size: 20px;
     
 }
+#purchase{
+    margin-top: -500px;
+}
 #timeToReady{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    /* display: block; */
     text-align: right;
 }
 
@@ -314,6 +321,7 @@ input{
   .login-box a span {
     position: absolute;
     display: block;
+    height: 1px;
   }
   
   .login-box a span:nth-child(1) {
