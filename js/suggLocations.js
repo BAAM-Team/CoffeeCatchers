@@ -1,4 +1,14 @@
 // 'use strict'
+
+// This if statement use when only the user get inside a the menu of branch and add to cart then change his mind to select another branch.
+if (localStorage.getItem("cart") !== null) {
+    localStorage.removeItem("cart")
+}
+// // This if statement if user select a branch then git back to the suggLocation page will empty the key choosenBranch.
+if (localStorage.getItem("choosenBranch") !== null) {
+    localStorage.removeItem("choosenBranch")
+}
+
 var numberOfImages = 1;
 // Adding Id's names for the branches 
 var ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']
@@ -7,14 +17,15 @@ var branchWithinRangeList = JSON.parse(localStorage.getItem('branchWithinRangeLi
 var table = document.getElementById('threeSuggestedLocation')
 var tr = document.createElement('tr');
 tr.setAttribute('id', 'imageRow');
-var rowOfdictense = document.createElement('tr');
-rowOfdictense.setAttribute('id', 'rowOfdictense')
-var rowOfName = document.createElement('tr');
-rowOfName.setAttribute('id', 'rowOfName')
+// var rowOfdictense = document.createElement('tr');
+// rowOfdictense.setAttribute('id', 'rowOfdictense')
+// var rowOfName = document.createElement('tr');
+// rowOfName.setAttribute('id', 'rowOfName')
 table.appendChild(tr);
 renderLocation();
 renderShowMoreButton();
 // write our data in the table 
+var limit=0;
 function renderLocation() {
     for (numberOfImages; numberOfImages < branchWithinRangeList.length; numberOfImages++) {
         var td = document.createElement('td');
@@ -23,16 +34,15 @@ function renderLocation() {
         td.appendChild(image)
         image.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(branchWithinRangeList[numberOfImages - 1]);
         image.setAttribute('src', mainImage);
-        var distanceOfBranch = document.createElement('td');
-        distanceOfBranch.textContent = 'The distance : '+Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
-        rowOfdictense.appendChild(distanceOfBranch);
-        table.appendChild(rowOfdictense);
-        var nameOfBranch = document.createElement('td');
+        var distanceOfBranch = document.createElement('span');
+        distanceOfBranch.textContent = Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
+        td.appendChild(distanceOfBranch);
+        // table.appendChild(rowOfdictense);
+        var nameOfBranch = document.createElement('strong');
         nameOfBranch.textContent = branchWithinRangeList[numberOfImages - 1].name;
-        rowOfName.appendChild(nameOfBranch);
-        table.appendChild(rowOfName);
+        td.appendChild(nameOfBranch);
+        // table.appendChild(rowOfName);
         if (numberOfImages % 3 == 0) {
             numberOfImages++
             break;
@@ -40,22 +50,20 @@ function renderLocation() {
     }
 }
 function renderShowMoreButton() {
-    var main = document.getElementById('main');
+    var divBottun = document.getElementById('divBottun');
     var button = document.createElement('button');
     button.textContent = "Show more";
     button.setAttribute('onclick', 'renderSecondRow()');
-    console.log('Iam here');
     button.setAttribute('id', 'bottunOfShowmore');
-    main.appendChild(button);
+    divBottun.appendChild(button);
 }
 function renderSecondRow() {
-    console.log('second row data');
     var tr1 = document.createElement('tr');
     tr1.setAttribute('id', 'imageRow');
-    var rowOfdictense1 = document.createElement('tr');
-    rowOfdictense1.setAttribute('id', 'rowOfdictense')
-    var rowOfName1 = document.createElement('tr');
-    rowOfName1.setAttribute('id', 'rowOfName')
+    // var rowOfdictense1 = document.createElement('tr');
+    // rowOfdictense1.setAttribute('id', 'rowOfdictense')
+    // var rowOfName1 = document.createElement('tr');
+    // rowOfName1.setAttribute('id', 'rowOfName')
     table.appendChild(tr1)
     for (numberOfImages; numberOfImages < branchWithinRangeList.length; numberOfImages++) {
         var td1 = document.createElement('td');
@@ -64,23 +72,23 @@ function renderSecondRow() {
         td1.appendChild(image1)
         image1.setAttribute('id', ids[numberOfImages - 1]);
         var mainImage = branchWithinRangeList[numberOfImages - 1].mainPicture;
-        console.log(mainImage);
         image1.setAttribute('src', mainImage);
-        var distanceOfBranch1 = document.createElement('td');
-        distanceOfBranch1.textContent ='The distance : '+ Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
-        rowOfdictense1.appendChild(distanceOfBranch1);
-        table.appendChild(rowOfdictense1);
-        var nameOfBranch1 = document.createElement('td');
+        var distanceOfBranch1 = document.createElement('span');
+        distanceOfBranch1.textContent = Math.floor(branchWithinRangeList[numberOfImages - 1].distance) + ' KM';
+        td1.appendChild(distanceOfBranch1);
+        // table.appendChild(rowOfdictense1);
+        var nameOfBranch1 = document.createElement('strong');
         nameOfBranch1.textContent = branchWithinRangeList[numberOfImages - 1].name;
-        rowOfName1.appendChild(nameOfBranch1);
-        table.appendChild(rowOfName1);
+        td1.appendChild(nameOfBranch1);
+        // table.appendChild(rowOfName1);
         if (numberOfImages % 3 == 0) {
             numberOfImages++
             break;
         }
-    } if (numberOfImages < branchWithinRangeList.length) {
-        button.remove();
-    }
+        limit++;
+    } if (limit >2) {
+        divBottun.remove();
+        }
 
 }
 

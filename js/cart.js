@@ -3,7 +3,6 @@ var finalCart = JSON.parse(localStorage.getItem('cart'));
 var totalCart = JSON.parse(localStorage.getItem('settotal'));
 
 var distanceForChosenLocation = JSON.parse(localStorage.getItem('choosenBranch'));
-console.log(distanceForChosenLocation)
 var selectedItemCart = document.getElementById('selectedProductCart')
 var arrivalTime;
 
@@ -51,7 +50,6 @@ selectedItemUl.appendChild(selectedItemLiQtyPrice)
 }
 var finaltotal = document.getElementById('totalID')
 finaltotal.textContent = 'Total: ' + Number(totalCart) + ' JD'
-console.log(totalCart)
 
 var orderForm = document.getElementById('orderForm')
 orderForm.addEventListener('submit', SubmitionFunc );

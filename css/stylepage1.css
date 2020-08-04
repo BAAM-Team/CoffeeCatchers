@@ -1,67 +1,56 @@
-
-body {
-    /* background-image: url(imges/background/coffee-beans-background-.jpg) ; */
-    
+body{
+  height: 700px;
+  opacity: 95%;
 }
 img {
-    width: 60px;
+    width: 40px;
     border-radius: 10px;
 }
 li {
     display: inline;
-    
+      
+}
+footer ul li a :hover{
+  width: 60px;
 }
 ul {
     position: absolute;
-  left: 67%;
+  right: 3%;
   bottom: 0%;
 }
 #circlPhone {
     border-radius: 50%;
     margin-left: 20px;
+    transition: width 1s;
 }
 .contactIcon {
     margin-left: 20px;
-}
-#InputStyle {
-    position: absolute;
-  left: 50%;
-  right: 50%;
-  Top: 65%;
-}
+    transition: width 1s;
+  }
 a{
     font-family: 'Ranchers', cursive;
     display: justify;   
     
     
 }
+p {
+  font-family: 'Josefin Sans', sans-serif;
+
+}
 #catchIt {
     font-size: 50px;
-    color: rgb(138, 35, 17);
+    color: rgb(247, 212, 164);
     position: absolute;
-  top: 55px;
-  right: -70px;
+    font-weight: 900;
+  top: 45%;
+  right: 60%;
   z-index: 2;
   width: 500px;
   word-spacing: 10pt;
-  text-align: right;
-  margin-right: 50px;
+  text-align: center;
+  /* margin-right: 50px; */
 
     
-}
-input {
-    box-shadow: 5px 10px 18px burlywood;
-    height: 50px;
-    width: 300px;
-    background-color: rgba(222, 184, 135, 0.897);
-    border: 1px solid brown;
-    border-radius: 5px;
-    color: black;
-    font-size: 20px;
-    position: absolute;
-  left: 40%;
-  right: 60%;
-  Top: 60%;
 }
 #locationPin {
     width: 200px;
@@ -69,7 +58,6 @@ input {
   left: 0px;
   top: 0px;
   z-index: 1;
-  border: 5px solid black;
   clip-path: circle(41%);
     
   
@@ -77,25 +65,104 @@ input {
 #logoImg {
     border-radius: 50%;
     position: absolute;
-  left: 45%;
-  top: 10%;
-  width: 150px;
+  left: 7%;
+  top: 6%;
+  width: 100px;
 
 }
 #top-nav {
     font-size: 40px;
-    color: burlywood;
+    color: rgb(247, 212, 164);
     position: absolute;
-    top: 11%;
-    left: 5%;
+    top: 7%;
+    right: 3%;
     opacity: 90%;
     width: 200px;
+    transition: width 1s;
     
 }
+#top-nav:hover{ 
+  width: 230px;
+  /* height: 300px; */
+}
 
-::placeholder {
-    font-weight: 800;
-    color: rgb(146, 18, 18);
-    font-size: 20px;
-    text-align: center;
+#catchIt button{
+  background-color: rgba(128, 128, 128, 0);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: -1000px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.41);
+  /* box-shadow: 0 3px 0 0 #383838;
+  border:3px solid transparent; */
+  
+
+  animation: pulse 1s linear infinite alternate;
+  -webkit-animation: pulse 1s linear infinite alternate;
+}
+#catchIt button:active {
+  background-image: linear-gradient(rgba(0,0,0,.1) 13%, transparent 13%,transparent);
+			box-shadow: 0 1px 0 0 #383838;
+			color: rgba(0, 0, 0,.45);
+			text-shadow: none;
+			
+			
+			-webkit-animation-play-state: paused; 
+    	animation-play-state: paused;
+}
+@-webkit-keyframes pulse {
+  100% {
+    transform: translateY(15px); 
+  } 
+}
+
+@keyframes pulse {
+  100% {
+    transform: translateY(15px); 
+  } 
+}
+#catchIt button:hover{
+  -webkit-animation-play-state: paused; 
+  animation-play-state: paused;
+
+}
+
+span {
+  background-color: rgba(128, 128, 128, 0);
+  border: rgb(150, 145, 145);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Ranchers', cursive;
+  color: rgb(150, 64, 36);
+}
+#catchItSpan {
+  background-color: rgba(128, 128, 128, 0);
+  border: rgb(150, 145, 145);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  font-family: 'Ranchers', cursive;
+  color: rgb(150, 64, 36);
+}
+#catchIt img {
+margin-left: -40px;
+width: 100px;
+margin-bottom: -40px;
 }
