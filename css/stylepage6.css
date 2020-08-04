@@ -1,0 +1,56 @@
+#clock{
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 450px;
+    margin-left: 480px;
+    margin-top: 110px;
+}
+
+h1{
+    display: inline-block;
+    padding: 20px;
+    padding-top:50px ;
+    padding-bottom:50px ;
+    position: relative;
+    top: 170px;
+    left: 560px;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(240, 255, 240);
+    border-radius: 100%;
+    background-color: rgba(222, 184, 135, 0.288);
+}
+
+#background  {
+    position: fixed;
+   top: 0;
+}
+
+#coName {
+    font-family: 'Righteous', cursive;
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    animation: colorRotate 2s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
