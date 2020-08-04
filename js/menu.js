@@ -29,10 +29,15 @@ if (localStorage.getItem("cart") !== null) {
     var cartImage = document.createElement("img")
     cartImage.setAttribute("src", "imges/icons/cartImage1.png")
     cartImage.setAttribute("width", "25px")
-    var spantext=document.createElement('span')
-    spantext.textContent='My Cart'
+    var spantext = document.createElement('span')
+    spantext.textContent = 'My Cart'
     link.append(spantext);
     link.append(cartImage);
+}
+
+// This if statement will delete the local storage with key name timerDown, because the user want add new cart.
+if (localStorage.getItem("timerDown") !== null) {
+    localStorage.removeItem("timerDown")
 }
 
 // Call the Object of the selected branch that user want it, then take only the key product object and save it in variable name it product.
@@ -183,8 +188,8 @@ function reply_click(clicked_id) {
         var cartImage = document.createElement("img")
         cartImage.setAttribute("src", "imges/icons/cartImage1.png")
         cartImage.setAttribute("width", "25px")
-        var spantext=document.createElement('span')
-        spantext.textContent='My Cart'
+        var spantext = document.createElement('span')
+        spantext.textContent = 'My Cart'
         link.append(spantext);
         link.append(cartImage);
     }
