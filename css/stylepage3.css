@@ -5,6 +5,16 @@ a{
     
     
 }
+#background{
+    position: fixed;
+    right: 0;
+    left: 0;
+    border-radius: 0px !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;  
+}
 #top-nav {
     font-size: 40px;
     color: black;
@@ -68,6 +78,7 @@ label{
 }
 
 table {
+    
     padding-top:50px ;
     padding-bottom:100px ;
 }

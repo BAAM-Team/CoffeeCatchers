@@ -74,7 +74,7 @@ var arrivalTime = (choosenBranchDist/35)*60+(((choosenBranchDist/35)*60)*1.3)
     console.log(finalCartArray)
     // making a new key to send the data to the next page
     localStorage.setItem('clientCart', storedFinalCartStringify);
-    document.location.href = 'CountDown.html';
+    document.location.href = 'countdown.html';
 
 
 }

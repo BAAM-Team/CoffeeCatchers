@@ -2,6 +2,16 @@ body{
   height: 700px;
   opacity: 95%;
 }
+#backgroundPic{
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-radius: 0px !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+}
 img {
     width: 40px;
     border-radius: 10px;

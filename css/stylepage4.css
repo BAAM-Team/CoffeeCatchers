@@ -12,6 +12,18 @@ ul li {
     margin: 0 0 24px;
     
 }
+
+#background{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: -100;
+  border-radius: 0px !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;  
+}
 .the-arrow {
     width: 64px;
     transition: all 0.2s;
